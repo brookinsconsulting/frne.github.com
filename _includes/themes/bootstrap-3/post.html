@@ -28,19 +28,19 @@
   {% endunless %}  
   
     <hr>
-    <ul class="pagination">
+      <div class="btn-group" role="group" aria-label="pagination">
     {% if page.previous %}
-      <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a></li>
+      <a class="btn btn-default" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo; Previous</a>
     {% else %}
-      <li class="prev disabled"><a>&larr; Previous</a></li>
+          <a class="btn btn-default disabled">&larr; Previous</a>
     {% endif %}
-      <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+          <a class="btn btn-default" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
     {% if page.next %}
-      <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a></li>
+          <a class="btn btn-default" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &raquo;</a>
     {% else %}
-      <li class="next disabled"><a>Next &rarr;</a>
+          <a class="btn btn-default disabled">Next &rarr;</a>
     {% endif %}
-    </ul>
+    </div>
     <hr>
     {% include JB/comments %}
   </div>

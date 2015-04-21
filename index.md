@@ -1,7 +1,7 @@
 ---
 layout: page
 title: frankneff.ch
-tagline: My blog about web development();
+tagline: My blog about software development();
 ---
 {% include JB/setup %}
 
